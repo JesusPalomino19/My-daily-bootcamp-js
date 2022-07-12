@@ -10,6 +10,8 @@
 @import url("./css/stories.css");
 @import url("./css/main-scroll.css");
 @import url("./css/modal-inputbar.css");
+@import url("./css/popup.css");
+
 ::after,
 ::before {
   box-sizing: border-box;
