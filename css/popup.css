@@ -42,3 +42,8 @@
   .popup :hover{
     background-color: #F0F7FF; 
   }
+
+  .block{
+    display: block;
+    opacity: 1;
+  }

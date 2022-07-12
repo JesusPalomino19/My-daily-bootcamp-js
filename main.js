@@ -5,7 +5,10 @@ let content = document.querySelectorAll(".popup-container .popup");
 menus.forEach((element,index) => {
     element.addEventListener("click", function (e) {
         e.preventDefault();
-        content[index].style.opacity = "1";
-        content[index].style.display = "block";
-     });
-});
+        if(content[index].classList.contains("block")==false){
+            content[index].classList.add("block");
+        }else{
+            content[index].classList.remove("block");
+        }
+    })
+ });
