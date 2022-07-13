@@ -28,6 +28,8 @@
         },600)
     }
  })
+
+ 
 let menus = document.querySelectorAll(".popup-container .public-button");
 let content = document.querySelectorAll(".popup-container .popup");
 
