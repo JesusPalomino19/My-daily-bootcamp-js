@@ -47,10 +47,6 @@
   opacity: 1;
 }
 
-.hidden{
-  visibility: visible;
-  opacity: 1;
-}
 
 .content-total {
   opacity: 0;
@@ -130,4 +126,9 @@
   border-radius: 6px;
   border: none;
   transition: 0.3s;
+}
+
+.show{
+  visibility: visible;
+  opacity: 1;
 }

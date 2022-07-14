@@ -35,7 +35,8 @@ let menus = document.querySelectorAll(".popup-container .public-button");
 let content = document.querySelectorAll(".popup-container .popup");
 let closeContent=document.querySelectorAll(".popup .public-delete");
 let contentTotal=document.querySelectorAll(".content-total");
-console.log(contentTotal);
+let closeWindow=document.querySelectorAll(".cmd-close-icon")
+let buttonClose=document.querySelectorAll(".cmd-close")
 
 menus.forEach((element,index) => {
     element.addEventListener("click", function (e) {
@@ -51,10 +52,30 @@ menus.forEach((element,index) => {
  closeContent.forEach((element,index) => {
     element.addEventListener("click", function (e){
         e.preventDefault();
-        if(contentTotal[index].classList.contains("hidden")==false){
-            contentTotal[index].classList.add("hidden")
-        }else{
-            contentTotal[index].classList.remove("hidden");
+        if(contentTotal[index].classList.contains("show")==false){
+
+            contentTotal[index].classList.add("show")
         }
     })
  });
+
+ closeWindow.forEach((element,index) => {
+    element.addEventListener("click", function (e){
+        e.preventDefault();
+        if(contentTotal[index].classList.contains("show")==true){
+
+            contentTotal[index].classList.remove("show")
+        }
+    })
+ });
+
+ buttonClose.forEach((element,index) => {
+    element.addEventListener("click", function (e){
+        e.preventDefault();
+        if(contentTotal[index].classList.contains("show")==true){
+
+            contentTotal[index].classList.remove("show")
+        }
+    })
+ });
+ 
