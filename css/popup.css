@@ -47,11 +47,29 @@
   opacity: 1;
 }
 
+.hidden{
+  visibility: visible;
+  opacity: 1;
+}
+
+.content-total {
+  opacity: 0;
+  visibility: hidden;  
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 55, 88, 0.75);
+  display: flex;
+  justify-content: center;
+}
 .content-modal-delete {
   width: 307px;
   height: 167px;
   position: absolute;
-  margin: 206px 566px;
+  margin: 206px 487px;
   bottom: 0;
   background-color: white;
   border-radius: 8px;
@@ -61,7 +79,7 @@
 .cmd-close-icon {
   display: flex;
   justify-content: right;
-  background-color: #203758;
+  background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: -46px;
   right: 0;
@@ -75,25 +93,24 @@
   text-align: center;
 }
 
-.cmd-buttoms{
+.cmd-buttoms {
   margin-right: 12px;
   padding-left: 41px;
   display: flex;
   gap: 16px;
-
 }
 
-.cmd-buttoms :hover{
-  color: #fff;
-  background-color: #1877f2;
+.cmd-buttoms :hover {
+  color:#1877F2;
+  background-color: #F0F7FF;
 }
 .cmd-close {
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
-  background-color: #f0f7ff;
-  color: #1877f2;
+  background-color: #FFFFFF;
+  color: #203758;
   width: 120px;
   height: 37px;
   border-radius: 6px;
@@ -106,13 +123,11 @@
   font-weight: 700;
   font-size: 11px;
   line-height: 13px;
-  background-color: #f0f7ff;
-  color: #1877f2;
+  background-color: #FFFFFF;
+  color: #203758;
   width: 120px;
   height: 37px;
   border-radius: 6px;
   border: none;
   transition: 0.3s;
 }
-
-
