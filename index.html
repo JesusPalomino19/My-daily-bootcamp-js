@@ -650,13 +650,18 @@
           <form class="box-interface">
             <textarea
               name=""
-              id=""
+              id="box-interface-modal"
               cols="30"
               rows="10"
               class="box-interface-modal"
               placeholder="Today I learned..."
             ></textarea>
           </form>
+          <div class="message-error-empty" id="error">
+            <p>
+              Really? Did not you learning anything? This field is required!
+            </p>
+          </div>
           <div class="box-interface-interactive">
             <div class="icon-part">
               <div class="container-input">
@@ -664,6 +669,7 @@
                   type="file"
                   class="icono inputfile"
                   id="icono-addPic"
+                  multiple
                 /><label for="icono-addPic">
                   <svg
                     width="18"
@@ -707,9 +713,12 @@
                 </svg>
               </span>
             </div>
-            <button class="button-publish">Publish</button>
+            <button class="button-publish" id="enviarFormulario">
+              Publish
+            </button>
           </div>
         </div>
+        <div class="output-prev" id="output"></div>
       </div>
     </div>
     <div class="modal-container">
