@@ -50,7 +50,7 @@
     gap: 10px;
 
 }
-.contet-modal-input{
+.content-modal-input{
     max-width: 622px;
     max-height: 242px;
     background-color: white;
@@ -61,6 +61,9 @@
 .modal-close{
     transform: translateY(-200%);
     margin-top: 156px;
+}
+.tittle-and-form{
+    width: 558px;
 }
 .tittle-modal{
     width: 300px;
@@ -74,9 +77,11 @@
     margin-bottom: 10px;
 }
 .box-interface{
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    height: 100px;
 }
 .message-error-empty{
+    margin-top: 10px;
     display: none;
     width: 558px;
     height: 11px;
@@ -86,6 +91,23 @@
     font-size: 9px;
     line-height: 11px;
     color: #FF0000;
+}
+.push-location{
+    padding: 16px;
+    width: 526px;
+    height: 12px;
+    background: #F1F2F6;
+    border-radius: 0px 0px 8px 8px;
+    display: none;
+}
+.info-location{
+    width: 146px;
+    height: 12px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    color: #203758;
 }
 .box-interface-modal{
     resize: none;
@@ -108,7 +130,7 @@
 .box-interface-interactive{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 0px;
+    margin-top: 10px;
 }
 .icon-part{
     display: flex;
@@ -118,6 +140,12 @@
 }
 .icono-addLoc{
     padding: 7px;
+    cursor: pointer;
+    transition: 0.25;
+}
+.icono-addLoc:hover{
+    border-radius: 8px;
+    background: #F0F7FF;
 }
 .icono-addPic{
     padding: 10.5px 12px;

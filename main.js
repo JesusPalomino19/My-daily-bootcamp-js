@@ -75,3 +75,9 @@ function deleteImage(id) {
 
   renderImages();
 }
+/* add the location */
+const addLocation = document.getElementById("icon-loc");
+addLocation.addEventListener("click", function(e){
+  e.preventDefault();
+  addLocation.style.flex = "visibility";  
+})
